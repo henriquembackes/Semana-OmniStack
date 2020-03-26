@@ -8,6 +8,6 @@ app.use(cors());
 app.use(express.json());
 app.use(routes);
 
-app.listen(2405); //mandando ir pra porta 2405 = localhost:2405
+app.listen(3333); //mandando ir pra porta 3333 = localhost:3333
 
 

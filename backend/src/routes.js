@@ -9,8 +9,8 @@ const routes = express.Router();
 
 routes.post('/session', SessionController.create);   
 
-routes.get('/ong', OngController.index);
-routes.post('/ong', OngController.create);    
+routes.get('/ongs', OngController.index);
+routes.post('/ongs', OngController.create);    
 
 routes.get('/profile', ProfileController.index);
 

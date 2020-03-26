@@ -4,16 +4,16 @@ module.exports = {
     async create(request, response) {
     const { id } = request.body;
     
-    const ong = await connection('ong')
+    const ongs = await connection('ongs')
     .where('id', id)
     .select('name')
     .first();
 
-    if (!ong) {
+    if (!ongs) {
         return response.status(400).json({ error: 'Deu pau ai amigao, tem nenhuma ONG com esse ID'});
     }
     
-    return response.json(ong);
+    return response.json(ongs);
 
     }
 }
